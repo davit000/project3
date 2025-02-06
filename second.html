@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group div {
+            flex: 1;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .buttons .cancel {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        .buttons .save {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .buttons button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create News</h1>
+        <form action="#" method="post">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter news title" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="5" placeholder="Enter news description" required></textarea>
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="Politics">Politics</option>
+                <option value="Science">Science</option>
+                <option value="Lifestyle">Lifestyle</option>
+            </select>
+
+            <div class="form-group">
+                <div>
+                    <label for="editor-first-name">Editor First Name</label>
+                    <input type="text" id="editor-first-name" name="editor-first-name" placeholder="Enter first name" required>
+                </div>
+                <div>
+                    <label for="editor-last-name">Editor Last Name</label>
+                    <input type="text" id="editor-last-name" name="editor-last-name" placeholder="Enter last name" required>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="cancel" onclick="window.history.back();">Cancel</button>
+                <button type="submit" class="save">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

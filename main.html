@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .actions button {
+            padding: 8px 12px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .actions .delete {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        .actions .update {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .create-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .create-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>News List</h1>
+        <a href="./second.html" class="create-button">create</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Likes</th>
+                    <th>Date Updated</th>
+                    <th>Date Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Local Hero Saves Family from Burning Building</td>
+                    <td>Politics</td>
+                    <td>5</td>
+                    <td>Dec 5</td>
+                    <td>Dec 5</td>
+                    <td class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>New Study Reveals Surprising Health Benefits of Coffee</td>
+                    <td>Science</td>
+                    <td>9</td>
+                    <td>May 5</td>
+                    <td>May 5</td>
+                    <td class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tech Giant Announces Revolutionary New Smartphone Features</td>
+                    <td>Lifestyle</td>
+                    <td>7</td>
+                    <td>June 5</td>
+                    <td>June 5</td>
+                    <td class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>International Space Mission Successfully Returns to Earth</td>
+                    <td>Politics</td>
+                    <td>10</td>
+                    <td>June 6</td>
+                    <td>June 6</td>
+                    <td class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Historic Peace Agreement Signed Between Long-Standing Rivals</td>
+                    <td>Politics</td>
+                    <td>15</td>
+                    <td>Feb 5</td>
+                    <td>Feb 5</td>
+                    <td class="actions">
+                        <button class="delete">Delete</button>
+                        <button class="update">Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
